@@ -32,14 +32,14 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="container">
+        <h1 className='title'>Buscador de Endereço</h1>
         <input placeholder='digite aqui seu Cep' onChange={trocaCep} />
-        <h4>Cep: {endereco.cep}</h4>
-        <p>Cidade: {endereco.cidade}</p>
-        <p>Estado: {endereco.estado}</p>
-        <p>Rua: {endereco.rua}</p>
-        <p>Bairro: {endereco.bairro}</p>
-
+        <p> {endereco.cep}</p>
+        <p>{endereco.cidade}</p>
+        <p>{endereco.estado}</p>
+        <p> {endereco.rua}</p>
+        <p> {endereco.bairro}</p>
       </header>
     </div>
   );
